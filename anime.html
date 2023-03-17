@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kotetsu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+<style type="text/css">
+    header{
+        height: 100px;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        position: fixed;
+        z-index:12 ;
+
+    }
+    
+
+
+    .logo{
+       font-family: 'Nosifer', cursive;
+        font-size: 40px;
+        padding: 30px;
+        margin-left: 50px;
+
+    }
+
+    .logo a{
+        color:#fff;
+        text-decoration: none;
+    }
+    .logo a:hover{
+        color: #fff;
+    }
+    .nav{
+        font-family: 'poppins';
+        font-size: 20px;
+        float: right;
+        list-style: none;
+
+    }
+    .nav li{
+        display: inline-block;
+
+    }
+.nav li a{
+    padding: 15px;
+}
+.nav li a:hover{
+    background:#7D7A7A ;
+    color: #fff;
+    border: 0px solid #000;
+    border-radius: 5px;
+    border-width:auto ;
+}
+.carousel-item img{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    filter: brightness(80%);
+}
+.box{background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 25px;
+
+}
+.box p{
+    text-align: justify;
+}
+
+.vilom{
+            width: 90%;
+            padding: 20px;
+            margin: 100px auto;
+            display:flex ;
+            flex-direction: row;
+            justify-content: center;
+        }
+    .om{
+        width: 400px;
+        margin: 0 10px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+        transition: 0.1s;
+    }   
+     .om img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+
+     }
+    .om:hover{
+    transform: scale(1.3);
+    z-index: 2;
+     }
+
+body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .section{
+            background-color: #252121;
+                display:flex ;
+    justify-content: left;
+    padding: 120px;
+            width: 1400px;
+            margin: 5rem auto 0 auto ;
+
+        }
+        
+.section img{
+    height: 350px;
+    transition: 0.5s;
+
+}
+.section img:hover{
+    transform: scale(1.38);
+    z-index: 2;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:black ;">
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\logo.jpg" style="width:auto; height: 45px; margin-left: 5px; margin-top: 0px;">&nbsp&nbsp
+            <a href="Home.html">KOTETSU</a>
+       
+        <div class="nav">
+            <ul>
+                <li><a href="">Search </a>
+                </li>&nbsp&nbsp&nbsp
+                <li><a href="">New Anime</a></li>&nbsp&nbsp&nbsp
+                 <li><a href="">Popular</a></li>&nbsp&nbsp&nbsp
+                  <li><a href="">Anime list</a></li>&nbsp&nbsp&nbsp
+                   <li><a href="">Sign Up/Log in</a></li>
+            </ul>
+
+        </div>
+         </div>
+
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\a.jpg" style="width:1768px; height:992px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="box">
+
+        <h1>JUJUTSU KAISEN</h1>
+        <p>Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings.</p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\b.jpg"style="width:1768px; height:992px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="box">
+        <h1>ONE PIECE</h1>
+        <p>The series focuses on Monkey D. Luffy, a young man made of rubber, who, inspired by his childhood idol, the powerful pirate Red-Haired Shanks, sets off on a journey from the East Blue Sea to find the mythical treasure, the One Piece, and proclaim himself the King of the Pirates.</p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\c.jpg"style="width:1768px; height:992px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"><div class="box">
+        <h1>NARUTO</h1>
+        <p>The Naruto series, is a tale of a boy who has a dream. A dream to be acknowledged by the villagers of his village. A dream to someday become the village's strongest ninja(The Hokage). When Naruto is just born, an evil nine tailed fox ravages Naruto's entire village(konohagakure).</p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\d.jpg"style="width:1768px; height:992px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"><div class="box">
+        <h1>DEMON SLAYER</h1>
+        <p>A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\e.jpg"style="width:1768px; height:992px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"><div class="box">
+        <h1>ATTACK ON TITAN</h1>
+        <p> It is set in a world where humanity is forced to live in cities surrounded by three enormous walls that protect them from gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after they bring about the destruction of his hometown and the death of his mother</p></div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>  
+
+   
+   <br><br></var> <h1 align="center" style="font-size:40px; font-family: 'Bungee Inline', cursive; color: white;">▶ ANIME</h1><br><br>
+<p style="font-size:25px; font-family: 'Dosis', sans-serif; color: whitesmoke;">Anime (Japanese: アニメ, IPA: [aɲime]) is hand-drawn and computer-generated animation originating from Japan. Outside of Japan and in English, anime refers specifically to animation produced in Japan. However, in Japan and in Japanese, anime (a term derived from a shortening of the English word animation) describes all animated works, regardless of style or origin. Animation produced outside of Japan with similar style to Japanese animation is commonly referred to as anime-influenced animation.
+
+The earliest commercial Japanese animations date to 1917. A characteristic art style emerged in the 1960s with the works of cartoonist Osamu Tezuka and spread in following decades, developing a large domestic audience. Anime is distributed theatrically, through television broadcasts, directly to home media, and over the Internet. In addition to original works, anime are often adaptations of Japanese comics (manga), light novels, or video games. It is classified into numerous genres targeting various broad and niche audiences.
+
+Anime is a diverse medium with distinctive production methods that have adapted in response to emergent technologies. It combines graphic art, characterization, cinematography, and other forms of imaginative and individualistic techniques. Compared to Western animation, anime production generally focuses less on movement, and more on the detail of settings and use of "camera effects", such as panning, zooming, and angle shots. Diverse art styles are used, and character proportions and features can be quite varied, with a common characteristic feature being large and emotive eyes.
+
+The anime industry consists of over 430 production companies, including major studios such as Studio Ghibli, Kyoto Animation, Sunrise, Bones, Ufotable, MAPPA, Wit Studio, CoMix Wave Films, Production I.G and Toei Animation. Since the 1980s, the medium has also seen widespread international success with the rise of foreign dubbed, subtitled programming, and since the 2010s its increasing distribution through streaming services and a widening demographic embrace of anime culture, both within Japan and worldwide.As of 2016, Japanese animation accounted for 60% of the world's animated television shows</p>
+<br><br><br><br><br><br><br><br>
+<hr><hr>
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ NARUTO OG</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\1.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\2.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\3.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\4.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\5.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">NARUTO</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\aa.jpg">
+</p>
+</div>
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ NARUTO SHIPPUDEN</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\6.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\7.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\8.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\9.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\10.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">NARUTO SHIPPUDEN</h1>
+<p style="color:#c0bdbd; margin-right:20px;">It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world. Although Naruto is older and sinister events loom on the horizon, he has changed little in personality—still rambunctious and childish—though he is now far more confident and possesses an even greater determination to protect his friends and home. Come whatever may, Naruto will carry on with the fight for what is important to him, even at the expense of his own body, in the continuation of the saga about the boy who wishes to become Hokage.</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\bb.jpg">
+</p>
+</div>
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ ONE PIECE</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\11.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\12.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\13.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\14.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\15.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">ONE PIECE</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Gold Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King. Enter Monkey Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\cc.jpg">
+</p>
+</div>
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ JUJUTSU KAISEN</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\16.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\17.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\18.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\19.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\20.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">JUJUTSU KAISEN</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Gold Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King. Enter Monkey Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\dd.jpg">
+</p>
+</div>
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ DEMON SLAYER</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\21.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\22.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\23.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\24.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\25.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">DEMON SLAYER</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night. When he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\ee.jpg">
+</p>
+</div>
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ ATTACK ON TITAN</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\26.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\27.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\28.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\29.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\30.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">ATTACK ON TITAN</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\ff.jpg">
+</p>
+</div>
+
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ TOKYO GHOUL</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\31.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\32.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\33.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\34.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\35.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">TOKYO GHOUL</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Tokyo has become a cruel and merciless city—a place where vicious creatures called "ghouls" exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society. Based on the best-selling supernatural horror manga by Sui Ishida, Tokyo Ghoul follows Ken Kaneki, a shy, bookish college student, who is instantly drawn to Rize Kamishiro, an avid reader like himself. However, Rize is not exactly who she seems, and this unfortunate meeting pushes Kaneki into the dark depths of the ghouls' inhuman world. In a twist of fate, Kaneki is saved by the enigmatic waitress Touka Kirishima, and thus begins his new, secret life as a half-ghoul/half-human who must find a way to integrate into both societies.</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\gg.jpg">
+</p>
+</div>
+
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ TOKYO REVENGERS</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\36.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\37.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\38.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\39.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\40.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">TOKYO REVENGERS</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Takemichi Hanagaki's life is at an all-time low. Just when he thought it couldn't get worse, he finds out that Hinata Tachibana, his ex-girlfriend, was murdered by the Tokyo Manji Gang: a group of vicious criminals that has been disturbing society's peace for quite some time. Wondering where it all went wrong, Takemichi suddenly finds himself travelling through time, ending up 12 years in the past—when he was still in a relationship with Hinata. Realizing he has a chance to save her, Takemichi resolves to infiltrate the Tokyo Manji Gang and climb the ranks in order to rewrite the future and save Hinata from her tragic fate</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\hh.jpg">
+</p>
+</div>
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ BLEACH</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\41.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\42.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\43.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\44.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\45.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">BLEACH</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Ichigo Kurosaki is an ordinary high schooler—until his family is attacked by a Hollow, a corrupt spirit that seeks to devour human souls. It is then that he meets a Soul Reaper named Rukia Kuchiki, who gets injured while protecting Ichigo's family from the assailant. To save his family, Ichigo accepts Rukia's offer of taking her powers and becomes a Soul Reaper as a result. However, as Rukia is unable to regain her powers, Ichigo is given the daunting task of hunting down the Hollows that plague their town. However, he is not alone in his fight, as he is later joined by his friends—classmates Orihime Inoue, Yasutora Sado, and Uryuu Ishida—who each have their own unique abilities. As Ichigo and his comrades get used to their new duties and support each other on and off the battlefield, the young Soul Reaper soon learns that the Hollows are not the only real threat to the human world</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\ii.jpg">
+</p>
+</div>
+
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿ BORUTO:NARUTO NEXT GENERATIONS</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\46.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\47.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\48.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\49.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\50.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">BORUTO:NARUTO NEXT GENERATIONS</h1>
+<p style="color:#c0bdbd; margin-right:20px;">Following the successful end of the Fourth Shinobi World War, Konohagakure has been enjoying a period of peace, prosperity, and extraordinary technological advancement. This is all due to the efforts of the Allied Shinobi Forces and the village's Seventh Hokage, Naruto Uzumaki. Now resembling a modern metropolis, Konohagakure has changed, particularly the life of a shinobi. Under the watchful eye of Naruto and his old comrades, a new generation of shinobi has stepped up to learn the ways of the ninja. Boruto Uzumaki is often the center of attention as the son of the Seventh Hokage. Despite having inherited Naruto's boisterous and stubborn demeanor, Boruto is considered a prodigy and is able to unleash his potential with the help of supportive friends and family. Unfortunately, this has only worsened his arrogance and his desire to surpass Naruto which, along with his father's busy lifestyle, has strained their relationship. However, a sinister force brewing within the village may threaten Boruto's carefree life. New friends and familiar faces join Boruto as a new story begins in Boruto: Naruto Next Generations.</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\jj.jpg">
+</p>
+</div>
+
+<br><br><br><br><hr><hr>
+
+
+<h1 style="font-family: 'Anton', sans-serif; color:whitesmoke; font-size:90px; margin-left: 150px;">⦿DEATH NOTE</h1>
+<br>
+
+
+
+
+<div class="vilom">
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\51.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\52.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\53.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\54.jpg">
+    </div>
+
+
+    <div class="om"> 
+        <img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\55.jpg">
+    </div>
+ </div>
+
+
+
+
+<div class="section">
+<div class="text" >
+<h1 style="color:greenyellow; margin:0;">DEATH NOTE</h1>
+<p style="color:#c0bdbd; margin-right:20px;">A shinigami, as a god of death, can kill any person—provided they see their victim's face and write their victim's name in a notebook called a Death Note. One day, Ryuk, bored by the shinigami lifestyle and interested in seeing how a human would use a Death Note, drops one into the human realm. High school student and prodigy Light Yagami stumbles upon the Death Note and—since he deplores the state of the world—tests the deadly notebook by writing a criminal's name in it. When the criminal dies immediately following his experiment with the Death Note, Light is greatly surprised and quickly recognizes how devastating the power that has fallen into his hands could be. With this divine capability, Light decides to extinguish all criminals in order to build a new world where crime does not exist and people worship him as a god. Police, however, quickly discover that a serial killer is targeting criminals and, consequently, try to apprehend the culprit. To do this, the Japanese investigators count on the assistance of the best detective in the world: a young and eccentric man known only by the name of L.</div>
+<img src="C:\Users\Admin\OneDrive\Desktop\KOTETSU\kk.jpg">
+</p>
+</div>
+
+<br><br><br><br><hr><hr>
+
+
+
+
+
+</body>
+</html>
